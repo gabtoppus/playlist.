@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>playlist.</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Playlist</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <audio id="audioPlayer"></audio>
+  <body>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+      <!-- LEFT SIDE -->
+      <div class="left-side">
+        <h1>Playlist</h1>
+        <p>Nossas músicas</p>
+      </div>
+      <!-- RIGHT SIDE -->
+      <div class="right-side">
+        <!-- Hidden radios -->
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <input type="radio" name="slider" id="item-4" />
+        <input type="radio" name="slider" id="item-5" />
+
+        <!-- CARDS -->
+        <div class="cards">
+          <!-- Song 1: sweet -->
+          <label class="card" for="item-1" id="song-1">
+            <img src="https://i.postimg.cc/7hhn9SzZ/cigarettes-after-sex.jpg" alt="Sweet" />
+          </label>
+          <!-- Song 2: ivy -->
+          <label class="card" for="item-2" id="song-2">
+            <img src="https://i.imgur.com/1WuYs5q.jpg" alt="Ivy" />
+          </label>
+          <!-- Song 3: lisboa -->
+          <label class="card" for="item-3" id="song-3">
+            <img src="https://i.postimg.cc/2SGdsH7s/baixados-(1).jpg" alt="Lisboa" />
+          </label>
+          <!-- Song 4: Sparks -->
+          <label class="card" for="item-4" id="song-4">
+            <img src="https://i.postimg.cc/QCZW95qk/Parachutes-by-Coldplay-on-Apple-Music.jpg" alt="Sparks" />
+          </label>
+          <!-- Song 5: About You -->
+          <label class="card" for="item-5" id="song-5">
+            <img src="https://i.postimg.cc/N0ZCPstJ/Arctic-Monkeys-AM.jpg" alt="No. 1 Party Anthem" />
+          </label>
+        </div>
+
+        <!-- PLAYER -->
+        <div class="player">
+          <!-- SONG INFO 1: Seasons -->
+          <div class="song-info active" id="song-info-1">
+            <div class="title">Sweet</div>
+            <div class="song-details">
+              <span class="artist">Cigarettes After Sex</span>
+              <span class="duration">4:51</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-indicator">
+              <span class="elapsed"></span>
+              <span class="remaining"></span>
+            </div>
+          </div>
+          <!-- SONG INFO 2: ivy -->
+          <div class="song-info" id="song-info-2">
+            <div class="title">ivy</div>
+            <div class="song-details">
+              <span class="artist">Frank Ocean</span>
+              <span class="duration">4:10</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-indicator">
+              <span class="elapsed"></span>
+              <span class="remaining"></span>
+            </div>
+          </div>
+          <!-- SONG INFO 3: Daylight -->
+          <div class="song-info" id="song-info-3">
+            <div class="title">Lisboa</div>
+            <div class="song-details">
+              <span class="artist">Anavitória</span>
+              <span class="duration">3:39</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-indicator">
+              <span class="elapsed"></span>
+              <span class="remaining"></span>
+            </div>
+          </div>
+          <!-- SONG INFO 4: One Summer’s Day -->
+          <div class="song-info" id="song-info-4">
+            <div class="title">Sparks</div>
+            <div class="song-details">
+              <span class="artist">Coldplay</span>
+              <span class="duration">3:37</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-indicator">
+              <span class="elapsed"></span>
+              <span class="remaining"></span>
+            </div>
+          </div>
+          <!-- SONG INFO 5: About You -->
+          <div class="song-info" id="song-info-5">
+            <div class="title">No. 1 Party Anthem</div>
+            <div class="song-details">
+              <span class="artist">Arctic Monkeys</span>
+              <span class="duration">4:03</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <div class="time-indicator">
+              <span class="elapsed"></span>
+              <span class="remaining"></span>
+            </div>
+          </div>
+
+          <!-- PLAYER CONTROLS -->
+          <div class="controls">
+            <button id="prev">◁</button>
+            <button id="pause">▐▐</button>
+            <button id="next">▷</button>
+          </div>
+          <!-- EXTRA CONTROLS: Favorite Button Only -->
+          <div class="extra-controls">
+            <button id="favorite" class="favorite-btn">♡</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="notificationModal">
+      <div class="modal-content" id="modalContent">
+        <h2>Someone sent you a playlist</h2>
+        <p>Hey, it’s for you. I hope you listen to it.</p>
+        <button class="modal-close" onclick="closeModal()">Open Playlist</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
